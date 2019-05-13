@@ -7,9 +7,9 @@ non_taxable = 0
 taxable = 0.13
 imported = 0.20
 
-blouse = Product('Blouse', 24.00, taxable)
-t_shirt = Product('T Shirt', 15.75, non_taxable)
-jeans = Product('Jeans', 51.50, imported)
+blouse = Product('Blouse', 24.00, 1, taxable)
+t_shirt = Product('T Shirt', 15.75, 2, non_taxable)
+jeans = Product('Jeans', 51.50, 3, imported)
 
 
 # cart.add_to_cart(blouse)

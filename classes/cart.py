@@ -16,13 +16,13 @@ class ShoppingCart:
   def calculate_sub_total(self):
     sub_total = 0
     for item in self.cart:
-      sub_total += item.base_price
+      sub_total += item.base_price * item.quantity
     return sub_total
 
   def calculate_total(self):
     total = 0
     for item in self.cart:
-      total += item.base_price * (1 + item.tax_rate)
+      total += (item.base_price * item.quantity) * (1 + item.tax_rate)
     return total
 
   def find_most_expensive(self):

@@ -1,9 +1,8 @@
-
-
 class Product:
-  def __init__(self, name, base_price, tax_type):
+  def __init__(self, name, base_price, quantity, tax_type):
     self.name = name
     self.base_price = base_price
+    self.quantity = quantity
     self.tax_rate = tax_type
 
   def __str__(self):
