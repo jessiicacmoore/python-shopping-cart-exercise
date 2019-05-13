@@ -25,6 +25,10 @@ class ShoppingCart:
       total += item.base_price * (1 + item.tax_rate)
     return total
 
+  def find_most_expensive(self):
+    sorted_list = sorted(self.cart, key=lambda product: product.base_price)
+    return "The most expensive item on your list is: {} at ${:.2f}".format(sorted_list[-1].name, sorted_list[-1].base_price)
+
   def print_receipt(self):
     print()
     print('Your Receipt')

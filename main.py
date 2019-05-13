@@ -26,7 +26,4 @@ cart.add_to_cart(t_shirt)
 # print(cart.calculate_sub_total())
 # print(cart.calculate_total())
 
-cart.print_receipt()
-
-cart.remove_from_cart(jeans)
-cart.print_receipt()
+print(cart.find_most_expensive())
