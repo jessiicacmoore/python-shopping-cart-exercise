@@ -24,3 +24,15 @@ class ShoppingCart:
     for item in self.cart:
       total += item.base_price * (1 + item.tax_rate)
     return total
+
+  def print_receipt(self):
+    print()
+    print('Your Receipt')
+    print()
+    for item in self.cart:
+      print("{}.............{:.2f}".format(item.name, item.base_price))
+    print('-------------------------------')
+    print("Sub Total:..........{:.2f}".format(self.calculate_sub_total()))    
+    print("Total:..............{:.2f}".format(self.calculate_total()))
+    print()
+    
